@@ -1,0 +1,200 @@
+/* ===========================nav================================= */
+nav {
+  position: absolute !important;
+  z-index: 100;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.searchContainer {
+  display: flex;
+  gap: 20px !important;
+}
+.searchContainer input {
+  width: 250px;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 70, 0);
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li a:hover {
+  text-decoration: none;
+  color: #db0201 !important;
+}
+
+/* =========================hero=============================== */
+.hero-container {
+  max-width: 1400px;
+  margin: auto;
+  position: relative;
+}
+.hero-container img {
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #001f2f, rgba(0, 0, 0, 0));
+}
+
+/* ----------------- feature cards----------------------------- */
+.feature-card {
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.button {
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* ====================================== slider ============================== */
+.wrap {
+  position: relative;
+  height: 100%;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide.swiper-slide-active {
+  border: 2px solid #db0201 !important; /* Add a border to the active (middle) slide */
+}
+
+/* ====================================== faq ============================== */
+
+.arrow:before {
+  content: "\f068";
+  font-family: "FontAwesome";
+}
+
+.collapsed .arrow:before {
+  content: "\f067";
+}
+
+/* ====================================== footer ============================== */
+.rounded-t {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+/* ====================================== common  ============================== */
+.card-border {
+  border: 1px solid #db0201 !important;
+}
+/* bg */
+.bg-blue {
+  background-color: #001f2f;
+}
+.bg-red {
+  background-color: #db0201;
+}
+.bg-gray-500 {
+  background-color: #818181;
+}
+.bg-lightblue {
+  background-color: #344c59;
+}
+/* font-color */
+.text-gray {
+  color: #7c7c7c;
+}
+.text-gray-200 {
+  color: #d3d3d3;
+}
+.text-red {
+  color: #db0201;
+}
+.text-lightblue {
+  color: #9dd9f8;
+}
+
+/* font-size ==================== */
+.text-sm {
+  font-size: 14px;
+}
+
+.text-xl {
+  font-size: 24px;
+}
+.text-2xl {
+  font-size: 30px;
+}
+.text-3xl {
+  font-size: 35px;
+}
+.text-lg {
+  font-size: 16px;
+}
+
+/* line height ================== */
+.leading-sm {
+  line-height: 22px;
+}
+.leading-xl {
+  line-height: 50px;
+}
+
+/* font-weights===================== */
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-medium {
+  font-weight: 500;
+}
+
+/* radius */
+.rounded-lg {
+  border-radius: 10px;
+}
+.rounded-xl {
+  border-radius: 24px;
+}
+
+/* flex/grid gap */
+.gap-sm {
+  gap: 10px;
+}
