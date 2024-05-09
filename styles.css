@@ -51,7 +51,7 @@ li a:hover {
 }
 @media (max-width: 768px) {
   .overlay-content {
-    margin-top: 4.5vh;
+    margin-top: 3vh;
   }
 }
 
@@ -192,6 +192,10 @@ li a:hover {
 }
 
 /* font-weights===================== */
+.font-normal {
+  font-weight: 400;
+}
+
 .font-semibold {
   font-weight: 600;
 }
