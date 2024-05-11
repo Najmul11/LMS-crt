@@ -25,6 +25,8 @@
       crossorigin="anonymous"
     />
 
+    <!-- bootstrap icons -->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -51,13 +53,318 @@
   </head>
 
   <body>
+    <!--=====================nav  large/xl device============= -->
+    <header class="container bg-white position-relative p-0 d-none d-lg-block">
+      <nav class="p-0">
+        <div class="row align-items-center p-0 px-3">
+          <!-- top -->
+          <div class="col-lg-4 col-xl-5 p-0">
+            <img src="/assets/logo.png" alt="" class="" />
+          </div>
+          <div class="col-lg-8 pl-lg-3 pl-xl-5 col-xl-7 p-0">
+            <div
+              class="d-flex justify-content-between searchContainer p-0 w-100"
+            >
+              <div
+                class="bg-lightblue searchContainer align-items-center rounded-xl"
+              >
+                <input
+                  type="text"
+                  class="form-control bg-transparent border-0 rounded-xl text-white text-sm"
+                  placeholder="Search course, event or author"
+                />
+                <div style="width: 1px; height: 25px" class="bg-white"></div>
+
+                <div
+                  class="py-2 bg-transparent font-medium text-white text-sm d-flex align-items-center gap-sm"
+                  style="cursor: pointer"
+                >
+                  <span>Courses</span
+                  ><span><i class="bi bi-chevron-down"></i></span>
+                </div>
+
+                <div
+                  class="bg-gray-500 d-flex rounded-xl px-2 py-1 align-items-center justify-content-center mr-2"
+                  style="cursor: pointer"
+                >
+                <i class="bi bi-search text-white"></i>
+                </div>
+              </div>
+              <!-- login/sign buttons -->
+
+              <div class="d-flex gap-xl">
+                <button class="button px-4 py-2 btn bg-blue border text-white">
+                  <span>Sign In</span>
+                </button>
+
+                <button class="button px-4 py-2 btn bg-red text-white">
+                  <span>Sign Up</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!--  bottom-->
+          <div class="col-10 ml-auto p-0">
+            <ul
+              class="bottom-nav w-100 p-0 m-0 font-medium text-white text-sm"
+              style="list-style-type: none"
+            >
+              <li>
+                <a href="" class="text-white">Home</a>
+              </li>
+              <li>
+                <a href="" class="text-white">Academy Courses</a>
+              </li>
+              <li>
+                <a href="" class="text-white">Global Jobs</a>
+              </li>
+              <li>
+                <a href="" class="text-white">Graduate Feedback</a>
+              </li>
+              <li>
+                <a href="" class="text-white">Blog</a>
+              </li>
+              <li>
+                <a href="" class="text-white d-flex gap-sm align-items-center"
+                  >About us <span><i class="bi bi-chevron-down"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="" class="text-white">Contact</a>
+              </li>
+
+              <li>
+                <a href=""><img src="/assets/Cart.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    src="/assets/country.png"
+                    alt=""
+                    style="width: 40px; height: 40px"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+      <!--=====================nav  large/xl device scroll down to appear ============= -->
+      <div
+        class="position-fixed top-0 w-100 d-none"
+        style="z-index: 100"
+        id="floating-nav"
+      >
+        <header
+          class="container p-0 px-2 py-1 d-none d-lg-block custom-background rounded-xl my-2"
+        >
+          <div class="p-0">
+            <div class="row align-items-center p-0 px-3">
+              <!-- top -->
+              <div class="col-lg-3 col-xl-3 p-0">
+                <img
+                  src="/assets/logo.png"
+                  alt=""
+                  class=""
+                  style="width: 100px; height: 100px"
+                />
+              </div>
+              <!--  bottom-->
+              <div class="col-lg-9 col-xl-9 ml-auto p-0">
+                <ul
+                  class="bottom-nav w-100 p-0 m-0 font-medium text-white text-sm"
+                  style="list-style-type: none"
+                >
+                  <li>
+                    <a href="" class="text-white">Home</a>
+                  </li>
+                  <li>
+                    <a href="" class="text-white">Academy Courses</a>
+                  </li>
+                  <li>
+                    <a href="" class="text-white">Global Jobs</a>
+                  </li>
+                  <li>
+                    <a href="" class="text-white">Graduate Feedback</a>
+                  </li>
+                  <li>
+                    <a href="" class="text-white">Blog</a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      class="text-white d-flex gap-sm align-items-center"
+                      >About us <span><i class="bi bi-chevron-down"></i></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="" class="text-white">Contact</a>
+                  </li>
+
+                  <li>
+                    <a href=""><img src="/assets/Cart.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="/assets/country.png"
+                        alt=""
+                        style="width: 40px; height: 40px"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+
+    <!--=====================nav  sm /md device============= -->
+
+    <div
+      class="navbar navbar-expand-lg navbar-light custom-background position-fixed fixed-top d-lg-none"
+    >
+      <a class="navbar-brand" href="#">
+        <img
+          src="/assets/logo.png"
+          alt=""
+          class=""
+          style="width: 80px; height: 80px"
+        />
+      </a>
+      <button
+        class="navbar-toggler bg-lightblue "
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+      <i class="bi bi-list text-white  text-xl"></i>
+        <!-- <span class="navbar-toggler-icon text-white"></span> -->
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto pb-2">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Academy Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Global Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Graduate Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              About Us
+            </a>
+            <div class="dropdown-menu bg-lightblue" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+          <li class="nav-item mt-3">
+            <div
+            class="d-flex justify-content-between searchContainer p-0 w-100"
+          >
+            <div
+              class="bg-lightblue searchContainer align-items-center rounded-xl"
+            >
+              <input
+                type="text"
+                class="form-control bg-transparent border-0 rounded-xl text-white text-sm"
+                placeholder="Search course, event or author"
+              />
+              <div style="width: 1px; height: 25px" class="bg-white"></div>
+  
+              <div
+                class="py-2 bg-transparent font-medium text-white text-sm d-flex align-items-center gap-sm"
+                style="cursor: pointer"
+              >
+                <span>Courses</span
+                ><span><i class="bi bi-chevron-down"></i></span>
+              </div>
+  
+              <div
+                class="bg-gray-500 d-flex rounded-xl px-2 py-1 align-items-center justify-content-center mr-2"
+                style="cursor: pointer"
+              >
+              <i class="bi bi-search text-white"></i>
+              </div>
+            </div>
+          </li>
+
+          <li class="mt-4">
+
+
+
+            <div class="d-flex gap-xl align-items-center">
+
+              <a href=""><img src="/assets/Cart.png" alt="" /></a>
+
+
+              <button class="button px-4 py-2 btn bg-blue border text-white">
+                <span>Sign In</span>
+              </button>
+
+              <button class="button px-4 py-2 btn bg-red text-white">
+                <span>Sign Up</span>
+              </button>
+
+              <a href="">
+                <img
+                  src="/assets/country.png"
+                  alt=""
+                  style="width: 40px; height: 40px"
+              /></a>
+            </div>
+          </li>
+
+
+
+        
+       
+        </ul>
+   
+      </div>
+    </div>
+
     <main>
+    
+
       <!-- ================================== Hero ============================= -->
 
-      <section class="hero-container">
+      <section class="hero-container hero-margin">
         <img src="/assets/hero.png" alt="" class="w-100" />
         <!-- <video
-          src="/assets/Depositphotos_45477053_1080p (3).mov"
+          src="/assets/hero-video.mov"
           class="w-100"
           autoplay
           loop
@@ -1272,6 +1579,40 @@
           delay: 2500,
           disableOnInteraction: true,
         },
+      });
+
+      // // Get the navigation element
+      // const nav = document.getElementById("sticky-nav");
+
+      // // Hide the navigation initially
+      // // nav.style.display = "none";
+
+      // // Add scroll event listener
+      // window.addEventListener("scroll", function () {
+      //   // Check if the user has scrolled down by 150px
+      //   if (window.scrollY > 1000) {
+      //     // Show the navigation bar
+      //     nav.style.display = "block";
+      //     nav.style.position = "fixed";
+      //   } else {
+      //     // Hide the navigation bar
+      //     nav.style.display = "none";
+      //   }
+      // });
+
+      // Get the navigation element
+      const nav = document.getElementById("floating-nav");
+
+      // Add scroll event listener
+      window.addEventListener("scroll", function () {
+        // Check if the user has scrolled down by 150px
+        if (window.scrollY > 180) {
+          // Add the class to the h1 tag
+          nav.classList.add("sticky-nav");
+        } else {
+          // Remove the class from the h1 tag
+          nav.classList.remove("sticky-nav");
+        }
       });
     </script>
   </body>

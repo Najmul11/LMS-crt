@@ -9,11 +9,9 @@ nav {
 
 .searchContainer {
   display: flex;
-  gap: 20px !important;
+  gap: 10px !important;
 }
-.searchContainer input {
-  width: 250px;
-}
+
 .form-control:focus {
   box-shadow: 0 0 0 0.2rem rgba(40, 167, 70, 0);
 }
@@ -28,13 +26,51 @@ li a:hover {
   color: #db0201 !important;
 }
 
+.sticky-nav {
+  display: block !important;
+  position: fixed;
+  top: 0;
+}
+
+.nav-item a {
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .overlay-content {
+    margin-top: 3vh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .overlay-content {
+    margin-top: 12vh;
+  }
+}
+
+@media (min-width: 1025px) {
+  .overlay-content {
+    margin-top: 20vh;
+  }
+}
+
+.custom-background {
+  background: #001f2fd0;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
 /* =========================hero=============================== */
 .hero-container {
   max-width: 1400px;
   margin: auto;
   position: relative;
 }
-.hero-container img {
+
+@media (max-width: 991px) {
+  .hero-margin {
+    margin-top: 100px !important;
+  }
 }
 
 .overlay {
@@ -217,4 +253,7 @@ li a:hover {
 /* flex/grid gap */
 .gap-sm {
   gap: 10px;
+}
+.gap-xl {
+  gap: 20px !important;
 }
